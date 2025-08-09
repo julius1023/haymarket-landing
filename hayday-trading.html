@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to trade in HayDay using HayMarket Discord. Step-by-step guide to safe, fast trading with smart order matching.">
+    <meta name="keywords" content="hayday trading guide, how to trade hayday, hayday discord trading, haymarket trading">
+    <title>How to Trade - HayMarket Trading Guide</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background: #f8f9fa; 
+            color: #333; 
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            margin: 0;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            background: #6c757d;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+        }
+        
+        .step {
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 10px;
+            border-left: 5px solid;
+        }
+        
+        .step:nth-of-type(1) { /* Step 1 - Join Discord */
+            background: #e8f5e8;
+            border-left-color: #4CAF50;
+        }
+        
+        .step:nth-of-type(2) { /* Step 2 - Verify */
+            background: #e3f2fd;
+            border-left-color: #2196F3;
+        }
+        
+        .step:nth-of-type(3) { /* Step 3 - Find Channel */
+            background: #fff3e0;
+            border-left-color: #ff9800;
+        }
+        
+        .step:nth-of-type(4) { /* Step 4 - Commands */
+            background: #f3e5f5;
+            border-left-color: #9c27b0;
+        }
+        
+        .step h3 {
+            margin-top: 0;
+            font-size: 1.4em;
+        }
+        
+        .step:nth-of-type(1) h3 { color: #4CAF50; }
+        .step:nth-of-type(2) h3 { color: #2196F3; }
+        .step:nth-of-type(3) h3 { color: #ff9800; }
+        .step:nth-of-type(4) h3 { color: #9c27b0; }
+        
+        .step-number {
+            display: inline-block;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .step:nth-of-type(1) .step-number { background: #4CAF50; }
+        .step:nth-of-type(2) .step-number { background: #2196F3; }
+        .step:nth-of-type(3) .step-number { background: #ff9800; }
+        .step:nth-of-type(4) .step-number { background: #9c27b0; }
+        
+        .join-link {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .join-link:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+        }
+        
+        .tips {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .tips h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        
+        .safety {
+            background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);
+            border: 1px solid #bee5eb;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .safety h3 {
+            color: #0c5460;
+            margin-top: 0;
+        }
+        
+        .join-cta {
+            background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 15px;
+        }
+        
+        .join-btn {
+            display: inline-block;
+            background: white;
+            color: #ff9800;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .join-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        ul li {
+            margin: 10px 0;
+        }
+        
+        .highlight {
+            background: #e8f5e8;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #2e7d32;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2em; }
+            .header p { font-size: 1.1em; }
+            .content { padding: 20px; }
+            body { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>🔄 How to Trade in HayDay</h1>
+            <p>Your complete guide to safe, fast trading with HayMarket</p>
+        </div>
+        
+        <div class="content">
+            <a href="index.html" class="back-btn">← Back to Home</a>
+            
+            <div class="step">
+                <h3><span class="step-number">1</span>Join HayMarket Discord</h3>
+                <p>Click the button below to join our Discord server.</p>
+                <a href="https://discord.com/invite/ruPDzSc6yT" class="join-link">Join HayMarket Discord</a>
+            </div>
+            
+            <div class="step">
+                <h3><span class="step-number">2</span>Verify Yourself</h3>
+                <p>Complete the verification process to get full access to all trading features and channels. This helps keep our community safe and secure.</p>
+            </div>
+            
+            <div class="step">
+                <h3><span class="step-number">3</span>Find Your HayMarket Channel</h3>
+                <p>Look for your designated HayMarket channel - either <span class="highlight">HayMarket 1</span>, <span class="highlight">HayMarket 2</span>, or <span class="highlight">HayMarket 3</span>. This is where you'll do all your trading!</p>
+            </div>
+            
+            <div class="step">
+                <h3><span class="step-number">4</span>Use Trading Commands</h3>
+                <p>Type <span class="highlight">/</span> in your HayMarket channel and you'll see a full list of available commands. For more details about specific commands, check the <span class="highlight">#marketplace-commands</span> or <span class="highlight">#trading-commands</span> channels.</p>
+            </div>
+            
+            <div class="safety">
+                <h3>🛡️ Trading Safety</h3>
+                <ul>
+                    <li><strong>Never share personal info</strong></li>
+                    <li><strong>Report problems:</strong> Open a support ticket if you encounter any issues</li>
+                    <li><strong>Screen record:</strong> If you think you might get scammed, make sure to screen record the trade</li>
+                </ul>
+            </div>
+            
+            <div class="join-cta">
+                <h3>Ready to Start Trading?</h3>
+                <p>Join thousands of HayDay players who trade safely and efficiently every day!</p>
+                <a href="https://discord.com/invite/ruPDzSc6yT" class="join-btn">Join HayMarket Discord Now</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
